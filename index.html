@@ -6,6 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Fraylin's Website</title>
     <link rel="stylesheet" href="style.css">
+
+    <script>
+        window.onscroll = function() {myFunction()};
+
+
+        function myFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+         document.getElementById("myBar").style.width = scrolled + "%";
+        }
+
+
+
+
+
+    </script>
 </head>
 <body>
     <div class ="backgroundimg">
@@ -13,7 +30,7 @@
             <li><a tabindex = "0" href = "#home">Home</a></li> 
             <li><a tabindex = "1" href = "#projects">Projects</a></li>
         <li><a tabindex = "2" href = "#aboutme">About</a></li>
-            <li><a tabindex = "3" href = "FWR.pdf" download = "Fraylin's Resume">Resume</a></li>
+            <li><a tabindex = "3" href = "FWR.pdf" download = "Fraylin's Resume" title = "Will download my resume">Resume</a></li>
             <li><a tabindex = "4" href = "#">Contact</a></li>
             
 
@@ -22,14 +39,20 @@
     <span style = "color:white; position:absolute; top:200px ; left:550px ; font-size: 20px; font-weight: bold">Hi I'm Fraylin . . . </span>
     
     </div>
+    <div class="header">
+        <div class = "progress-container">
+            <div class ="progress-bar" id ="myBar"></div>
+        </div>
+    </div>
    
     
     <div class = "summary">
         <h3 id = "aboutme" style = "margin-bottom: 0px; text-align:center;">About me</h3>
+        <img src="myface.png" alt="profile picture" height = 150px width = 150px style = "display: block ; margin: 25px auto ; border-radius:85px">
         <p style = "font-size:18px">Goal-driven Computer Science student with over 3 years of experience in programming. Seeking an internship in the technological field to leverage a critical-thinking and problem-solving mindset to become an effective software engineer.</p>
     </div>
 
-    <h2 style = "text-align: center ; margin-top:150px; clear: left">Projects</h2>
+    <h2 id = "projects" style = "text-align: center ; margin-top:150px; clear: left">Projects</h2>
 
     <div class = "projectsContainer">
         <div class = "imageContainer">
