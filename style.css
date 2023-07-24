@@ -1,7 +1,7 @@
 /*Basic Styling */
 
 body{
-    background-color: white;
+    background-color: #4CEBE3;
     font-family:'Courier New', Courier, monospace;
     font-size: 12px;
     margin:0;
@@ -117,10 +117,12 @@ body{
 
 #rightArrow{
     margin-right:50px;
+    cursor:pointer;
     
 }
 #leftArrow{
     margin-left:50px;
+    cursor:pointer;
 }
 
 .textContainer{
