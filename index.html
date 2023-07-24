@@ -6,23 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Fraylin's Website</title>
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
 
-    <script>
-        window.onscroll = function() {myFunction()};
-
-
-        function myFunction() {
-        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        var scrolled = (winScroll / height) * 99.9;
-         document.getElementById("myBar").style.width = scrolled + "%";
-        }
-
-
-
-
-
-    </script>
+    
 </head>
 <body>
     <div class ="backgroundimg">
@@ -58,7 +44,7 @@
     
     <div class = "summary">
         <h3 id = "aboutme" style = "margin-bottom: 0px; text-align:center;">About me</h3>
-        <img src="myface.png" alt="profile picture" height = 150px width = 150px style = "display: block ; margin: 25px auto ; border-radius:200px">
+        <img src="imgs/myface.png" alt="profile picture" height = 150px width = 150px style = "display: block ; margin: 25px auto ; border-radius:200px">
         <p style = "font-size:18px">Goal-driven Computer Science student with over 3 years of experience in programming. Seeking an internship in the technological field to leverage a critical-thinking and problem-solving mindset to become an effective software engineer.</p>
     </div>
 
@@ -66,14 +52,13 @@
 
     <div class = "projectsContainer">
         <div class = "imageContainer">
-            <img src="https://cdn-icons-png.flaticon.com/512/25/25354.png" alt="left Arrow" width="50px" height="50px" id="leftArrow">
-            <img src="https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png" alt="Minecraft">
-            <img src="https://cdn-icons-png.flaticon.com/512/25/25606.png" alt="right Arrow" width="50px" height="50px" id="rightArrow">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25354.png" alt="left Arrow" width="50px" height="50px" id="leftArrow" onclick="leftArrowFunction()">
+            <a id="imageLink"><img src="imgs/calculator.png" alt="Minecraft" width="220px" height="280px" id="projectImage"></a>
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25606.png" alt="right Arrow" width="50px" height="50px" id="rightArrow"  onclick="rightArrowFunction()">
             
         </div>
         <div class = "textContainer">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat id debitis iusto quia aut! Est, veritatis. Veniam, error. Perferendis cum odit, accusamus earum perspiciatis eius doloremque in? Odio, magnam ut.</p>
-
+            <p id ="projectText">I made this calculator app during an online advanced FDU Python Course using the Tkinter GUI Kit </p>
         </div>
             
         

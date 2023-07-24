@@ -117,6 +117,7 @@ body{
 
 #rightArrow{
     margin-right:50px;
+    
 }
 #leftArrow{
     margin-left:50px;
@@ -150,6 +151,10 @@ body{
     border-style:inset;
     border-color: gray;
   }
-
+.textContainer {
+    border: solid 2px black;
+    border-style:inset;
+    font-size: 18px;
+}
 
   
