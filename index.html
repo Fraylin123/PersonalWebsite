@@ -31,8 +31,8 @@
             
 
         </ul>
-    <h1 class = "name" style = "position:absolute ; color:white ; left: 50px; top: 20px; font-family: Titillium Web">Fraylin</h1>
-    <span style = "color:white; position:absolute; top:200px ; left:550px ; font-size: 20px; font-weight: bold">Hi I'm Fraylin . . . </span>
+    <h1 class = "name" style = "position:absolute ; color:white ; left: 50px; top: 20px; font-family: Titillium Web">Fraylin Ayala</h1>
+    <span class = "typewriter" style = "color:white; position:absolute; top:200px ; left:550px ; font-size: 20px; font-weight: bold ">Hi I'm Fraylin . . . </span>
     
     </div>
     <div class="header">
@@ -44,8 +44,14 @@
     
     <div class = "summary">
         <h3 id = "aboutme" style = "margin-bottom: 0px; text-align:center;">About me</h3>
-        <img src="imgs/myface.png" alt="profile picture" height = 150px width = 150px style = "display: block ; margin: 25px auto ; border-radius:200px">
-        <p style = "font-size:18px">Goal-driven Computer Science student with over 3 years of experience in programming. Seeking an internship in the technological field to leverage a critical-thinking and problem-solving mindset to become an effective software engineer.</p>
+        <img src="imgs/myface.png" alt="profile picture" height = 150px width = 150px style = "float: left; margin: 25px 100px ; border-radius:200px">
+        <p style = "font-size:18px ; margin: 100px">Goal-driven Computer Science student with over 3 years of experience in programming. Seeking an internship in the technological field to leverage a critical-thinking and problem-solving mindset to become an effective software engineer.</p>
+    </div>
+
+    <div class="hobbiesSection">
+    <h2>Hobbies</h2>
+    
+
     </div>
 
     <h2 id = "projects" style = "text-align: center ; margin-top:150px; clear: left">Projects</h2>
@@ -53,13 +59,15 @@
     <div class = "projectsContainer">
         <div class = "imageContainer">
             <img src="https://cdn-icons-png.flaticon.com/512/25/25354.png" alt="left Arrow" width="50px" height="50px" id="leftArrow" >
-            <a id="imageLink"><img src="imgs/calculator.png" alt="Minecraft" width="220px" height="280px" id="projectImage"></a>
+            <a href = "https://replit.com/@FraylinA/Calculator-App" target = "_blank" id="imageLink"><img src="imgs/calculator.png" alt="Minecraft" width="220px" height="280px" id="projectImage"></a>
             <img src="https://cdn-icons-png.flaticon.com/512/25/25606.png" alt="right Arrow" width="50px" height="50px" id="rightArrow" >
             
         </div>
         <div class = "textContainer">
-            <p id ="projectText">I made this calculator app during an online advanced FDU Python Course using the Tkinter GUI Kit </p>
+            <p id ="projectText">I made this calculator app during an online advanced FDU Python course using the Tkinter GUI Kit </p>
         </div>
+
+        <!--Script to get the right and left arrow of the project section working by adding event listeners.-->
         <script>
             const rightArrow = document.getElementById("rightArrow");
             const leftArrow = document.getElementById("leftArrow");
@@ -73,8 +81,9 @@
                 imageLink.href = "https://fraylin123.github.io/pocketGuard/";
                 imageLink.target = "_blank";
             
-                document.getElementById("projectText").innerHTML = "This is pocketguard";
-                document.getElementById("projectImage").src = "/imgs/logo.png"
+                document.getElementById("projectText").innerHTML = " Pocketguard is a website that helps the user manage their debts and save money on their online service subscriptions. Created during the summer of my junior year as the culminating project of the All Star Code summer program.";
+                document.getElementById("projectImage").src = "/imgs/logo.png";
+                document.getElementById("projectImage").style.width = "330px";
         }
          });
 
@@ -83,8 +92,9 @@
         if (currentProjectNum == 1){
                 document.getElementById("projectText").innerHTML = "I made this calculator app during an online advanced FDU Python Course using the Tkinter GUI Kit";
                 document.getElementById("projectImage").src = "imgs/calculator.png"; 
-                imageLink.href = "https://github.com/Fraylin123/CalculatorApp";
+                imageLink.href = "https://replit.com/@FraylinA/Calculator-App";
                 imageLink.target = "_blank";
+                document.getElementById("projectImage").style.width = "220px";
         }
         });
 

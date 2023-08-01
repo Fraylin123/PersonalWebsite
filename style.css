@@ -1,11 +1,13 @@
 /*Basic Styling */
 
 body{
-    background-color: #4CEBE3;
+    background-color: white;
     font-family:'Courier New', Courier, monospace;
     font-size: 12px;
     margin:0;
     overflow:auto;
+    
+    
 }
 
 
@@ -14,7 +16,7 @@ body{
     display:flex;
     justify-content:flex-end;;
     padding: 2px;
-    margin-top:20px;
+    margin-top:40px;
     margin-right: 50px;
     list-style-type:none;
     position: absolute;
@@ -154,9 +156,39 @@ body{
     border-color: gray;
   }
 .textContainer {
-    border: solid 2px black;
-    border-style:inset;
     font-size: 18px;
 }
 
+.hobbiesSection{
+    text-align: center;
+}
+
+.typewriter {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid green; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 6s steps(40, end) infinite,
+      blink-caret .75s step-end infinite;
+     
+  }
+
+  @keyframes typing {
+    0%{ width: 0}
+    50% { width: 23% }
+    100%{
+        width: 0;
+        content:"hello"
+    }
+    
+  }
+ 
+
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: green; }
+  }
   
