@@ -97,7 +97,7 @@ body{
     height:500px;
     text-align: center;
     border: 2px black solid;
-    background-image: url("https://media.istockphoto.com/id/1402473970/photo/orange-sky-and-clouds-background-background-of-colorful-sky-concept-amazing-sunset-with.jpg?s=612x612&w=0&k=20&c=IpH3EkDUZy2Mdldagii92jx4FU5B0dTtQOaYpK6byBI=");
+    background-image: url("https://images.unsplash.com/photo-1513002749550-c59d786b8e6c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80");
     background-repeat:no-repeat;
     background-attachment: fixed;
     background-position:center;
@@ -159,9 +159,7 @@ body{
     font-size: 18px;
 }
 
-.hobbiesSection{
-    text-align: center;
-}
+
 
 .typewriter {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
