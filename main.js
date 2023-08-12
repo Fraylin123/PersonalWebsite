@@ -4,9 +4,25 @@ function myFunction() {
 var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
 var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
 var scrolled = (winScroll / height) * 99.9;
- document.getElementById("myBar").style.width = scrolled + "%";
+document.getElementById("myBar").style.width = scrolled + "%";
+var navigationBar = document.getElementsByClassName("navigationBar")
+
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop> 300) {
+    navigationBar[0].style.position = "fixed";
+    navigationBar[0].style.top = "-100"
+    navigationBar[0].style.top = "100"
+    navigationBar[0].style.background = "black"
+    
+
+  } else {
+    navigationBar[0].style.position = "absolute";
+    navigationBar[0].style.background = ""
+    
+  }
 
 }
+
+
 
 
 var words = ['Hi i like HTML', 'I also like css', 'Lorem ipsum dolor sit amet', ' consectetur adipiscing elit', 'sed do eiusmod tempor incididunt'],
