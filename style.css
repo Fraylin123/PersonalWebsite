@@ -49,8 +49,9 @@ p{
 
 .progress-bar{
     height: 8px;
-    background: red;
+    background: gray;
     width:0%;
+    opacity: 0.7;
     
 }
 
