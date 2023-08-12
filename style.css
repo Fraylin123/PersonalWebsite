@@ -1,5 +1,6 @@
 /*Basic Styling */
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
 body{
     background-color: white;
     font-family:'Courier New', Courier, monospace;
@@ -8,6 +9,10 @@ body{
     overflow:auto;
     
     
+}
+
+p{
+    font-family: Inter;
 }
 
 
@@ -20,7 +25,8 @@ body{
     margin-right: 50px;
     list-style-type:none;
     position: absolute;
-    left:28%;
+    left:33%;
+    transition: top 0.5s;
    
     
     
@@ -79,9 +85,7 @@ body{
 
 }
 
-#aboutme{
-    font-size: 20px;
-}
+
 
 
 
