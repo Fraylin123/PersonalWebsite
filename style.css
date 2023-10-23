@@ -113,6 +113,11 @@ p{
 
 }
 
+.emailContact{
+    display:block;
+}
+
+
 .imageContainer{
     display:flex;
     margin-top:50px;
