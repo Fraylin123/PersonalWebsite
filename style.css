@@ -7,7 +7,8 @@ body{
     font-size: 12px;
     margin:0;
     overflow:auto;
-    
+    background-color:#f0f8ff;
+   
     
 }
 
@@ -29,23 +30,18 @@ p {
     transition: top 0.5s;
    
     
-    
-    
 }
 
-.header {
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    width: 100%;
-    background-color: white;
-  }
 
 .progress-container{
     width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
     height: 8px;
     background: ccc;
 }
+
 
 .progress-bar{
     height: 8px;
@@ -62,9 +58,10 @@ p {
     height:500px;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: scroll ;
+    background-attachment: fixed ;
     background-size: cover;
     position:relative;
+    
     
    
    
@@ -88,20 +85,16 @@ p {
 
 
 
-
-
-
 .projectsContainer{
     display: flex;
     flex-direction:column;
-    width:70%;
+    width:100%;
     align-items: center;
     margin: 0px auto;
     margin-top: 0px;
     overflow:auto;
     height:500px;
     text-align: center;
-    border: 2px black solid;
     background-image: url("https://images.unsplash.com/photo-1513002749550-c59d786b8e6c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80");
     background-repeat:no-repeat;
     background-attachment: fixed;
@@ -146,7 +139,9 @@ p {
 .summary{
     margin: 30px 40px;
     margin-top: 100px;
+   
 }
+
 
 #dropdown-products {
     display: none;
@@ -193,8 +188,6 @@ p {
     
   }
  
-
-
   @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: green; }

@@ -34,11 +34,11 @@
     <span class = "typewriter" style = "color:white; position:absolute; top:200px ; left:550px ; font-size: 20px; font-weight: bold ">Hi I'm Fraylin . . . </span>
     
     </div>
-    <div class="header">
+
         <div class = "progress-container">
             <div class ="progress-bar" id ="myBar"></div>
         </div>
-    </div>
+   
    
     
     <div class = "summary">
@@ -52,72 +52,17 @@
     <div class = "projectsContainer">
         <div class = "imageContainer">
             <img src="https://cdn-icons-png.flaticon.com/512/25/25354.png" alt="left Arrow" width="50px" height="50px" id="leftArrow" >
-            <a href = "https://replit.com/@FraylinA/Calculator-App" target = "_blank" id="imageLink"><img src="imgs/calculator.png" alt="CalculatorApp" width="220px" height="280px" id="projectImage"></a>
+            <a href = "https://fraylin123.github.io/pocketGuard/" target = "_blank" id="imageLink"><img src="imgs/logo.png" alt="PocketGuard" width="330px" height="280px" id="projectImage"></a>
             <img src="https://cdn-icons-png.flaticon.com/512/25/25606.png" alt="right Arrow" width="50px" height="50px" id="rightArrow" >
             
         </div>
         <div class = "textContainer">
-            <p id ="projectText">I created this calculator app during an online advanced FDU Python course using the Tkinter GUI Kit </p>
+            <p id ="projectText"> Pocketguard is a website that helps the user manage their debts and save money on their online service subscriptions. Created during the summer of my junior year as the culminating project of the All Star Code summer program. </p>
         </div>
 
         <!--Script to get the right and left arrow of the project section working by adding event listeners.-->
-        <script>
-            const rightArrow = document.getElementById("rightArrow");
-            const leftArrow = document.getElementById("leftArrow");
-            const imageLink = document.getElementById("imageLink")
-
-            let currentProjectNum = 1;
         
-        rightArrow.addEventListener('click', () => {
-            if (currentProjectNum < 5){
-                currentProjectNum++;
-            }
-            
-            if (currentProjectNum==2){
-                imageLink.href = "https://fraylin123.github.io/pocketGuard/";
-                imageLink.target = "_blank";
-            
-                document.getElementById("projectText").innerHTML = " Pocketguard is a website that helps the user manage their debts and save money on their online service subscriptions. Created during the summer of my junior year as the culminating project of the All Star Code summer program.";
-                document.getElementById("projectImage").src = "imgs/logo.png";
-                document.getElementById("projectImage").style.width = "330px";
-            
-            
-            }
-            console.log(currentProjectNum);
-            
-            if (currentProjectNum == 4){
-                imageLink.href = "https://github.com/Fraylin123/Stocks-Web-Parser";
-                imageLink.target = "_blank";
 
-                document.getElementById("projectText").innerHTML = "A web parser that parses Yahoo's Finance Most Active Stocks page (https://finance.yahoo.com/markets/stocks/most-active/) to get the 25 most active stocks and displays them in a table on an Apache web server using PHP. The Python script uses get requests, BeautifulSoup for parsing, and pymongo to add the extracted data to a MongoDB database. The PHP script reads the data from the MongoDB database and displays the data in a table on an Apache web server."
-                document.getElementById("projectImage").src = "imgs/webparser.png"
-                document.getElementByID("projectImage").style.width = "330px"
-            }
-        }
-         );
-
-        leftArrow.addEventListener('click', () => {
-            if (currentProjectNum > 1){
-                currentProjectNum--;
-            }
-            
-        if (currentProjectNum == 1){
-                document.getElementById("projectText").innerHTML = "I made this calculator app during an online advanced FDU Python Course using the Tkinter GUI Kit";
-                document.getElementById("projectImage").src = "imgs/calculator.png"; 
-                imageLink.href = "https://replit.com/@FraylinA/Calculator-App";
-                imageLink.target = "_blank";
-                document.getElementById("projectImage").style.width = "220px";
-               
-        }
-        });
-
-
-
-
-
-        </script>
-
-    
 
     </div>
 
