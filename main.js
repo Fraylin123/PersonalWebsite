@@ -15,7 +15,7 @@ function myFunction() {
   let currentProjectNum = 1;
 
   rightArrow.addEventListener('click', () => {
-    if (currentProjectNum < 5) {
+    if (currentProjectNum < 3) {
       currentProjectNum++;
     }
     
