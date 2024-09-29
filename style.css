@@ -1,6 +1,5 @@
-/*Basic Styling */
-
 /*@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');*/
+
 body {
     background-color: white;
     font-family: 'Courier New', Courier, monospace;
@@ -9,19 +8,27 @@ body {
     overflow: auto;
     background-color: #f0f8ff;
 
-
 }
 
 p {
     font-family: 'Courier New', Courier, monospace;
 }
 
+.backgroundimg {
+    background-image: url("https://4kwallpapers.com/images/wallpapers/night-city-city-6016x3384-9753.jpg");
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
 
 .navigationBar {
     overflow: hidden;
     display: flex;
     justify-content: flex-end;
-    ;
     padding: 2px;
     margin-top: 40px;
     margin-right: 50px;
@@ -30,9 +37,7 @@ p {
     left: 33%;
     transition: top 0.5s;
 
-
 }
-
 
 .progress-container {
     width: 100%;
@@ -49,24 +54,6 @@ p {
     background: gray;
     width: 0%;
     opacity: 0.7;
-
-}
-
-
-.backgroundimg {
-    background-image: url("https://4kwallpapers.com/images/wallpapers/night-city-city-6016x3384-9753.jpg");
-    width: 100%;
-    height: 500px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    position: relative;
-
-
-
-
-
 }
 
 .navigationBar a {
@@ -77,14 +64,32 @@ p {
     margin: 10px 20px
 }
 
-
 .navigationBar a:hover {
     background-color: blue;
     color: white;
-
 }
 
+#dropdown-products {
+    display: none;
+    list-style: none;
+    margin: 2px 0 0 0;
+    padding: 0;
+}
 
+#menu:hover #dropdown-products {
+    display: block;
+}
+
+#dropdown {
+    border-style: inset;
+    border-color: gray;
+}
+
+.summary {
+    margin: 30px 40px;
+    margin-top: 100px;
+
+}
 
 .projectsContainer {
     display: flex;
@@ -101,19 +106,11 @@ p {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-
-
 }
 
-.emailContact>form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.textContainer {
+    font-size: 18px;
 }
-
-
-
 
 .imageContainer {
     display: flex;
@@ -124,14 +121,13 @@ p {
     max-width: 99%;
 }
 
-#rightArrow {
-    margin-right: 50px;
-    cursor: pointer;
-
-}
-
 #leftArrow {
     margin-left: 50px;
+    cursor: pointer;
+}
+
+#rightArrow {
+    margin-right: 50px;
     cursor: pointer;
 }
 
@@ -140,113 +136,50 @@ p {
     padding: 0px 100px;
 }
 
+.contactSection {
+    width: 100%;
+    margin: 10px 28%;
+    max-width: 600px;
+    padding: 10px 50px 10px 50px;
+}
 
-.summary {
-    margin: 30px 40px;
-    margin-top: 100px;
+.nameGroup,
+.emailGroup,
+.messageGroup {
+    display: flex;
+    margin-bottom: 15px;
+}
 
+.nameGroup input,
+.emailGroup input {
+    width: 83%;
+    height: 20px;
+}
+
+#contactSubmit {
+    display: flex;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.messageGroup textarea {
+    height: 200px;
+    resize: vertical;
 }
 
 #message {
     width: 500px;
 }
 
-textarea {
-    resize: vertical;
-}
-
-.contactSection{
-    width: 100%;
-    margin: 10px 28%;
-    max-width:600px;
-    padding: 10px 50px 10px 50px;
-    
-    
-
-    
-    
-
-    
-}
-
-.nameGroup, .emailGroup, .messageGroup{
-    display:flex;
-    margin-bottom: 15px;
-    
-}
-
-.nameGroup label{
-    margin-right: 32px;
-}
-.emailGroup label{
-    margin-right: 25px;
-}
-.messageGroup label{
-    margin-right: 10px;
-}
-
-.nameGroup input, .emailGroup input{
-    width:83%;
-    height: 20px;
-}
-
-.messageGroup textarea{
-    height: 200px;
-}
-#contactSubmit{
-    display:flex;
-    margin: 10px auto;
-    text-align: center;
-
-}
-
-
-
-
-
-#dropdown-products {
-    display: none;
-    list-style: none;
-    margin: 2px 0 0 0;
-    padding: 0;
-
-}
-
-#menu:hover #dropdown-products {
-    display: block;
-}
-
-#dropdown {
-    border-style: inset;
-    border-color: gray;
-}
-
-.textContainer {
-    font-size: 18px;
-}
-
-
-
-
-
-
-
-
 .typewriter {
     overflow: hidden;
-    /* Ensures the content is not revealed until the animation */
     border-right: .15em solid green;
-    /* The typwriter cursor */
     white-space: nowrap;
-    /* Keeps the content on a single line */
     margin: 0 auto;
-    /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em;
-    /* Adjust as needed */
     animation:
         typing 6s steps(40, end) infinite,
         blink-caret .75s step-end infinite;
-
 }
 
 @keyframes typing {
@@ -260,7 +193,7 @@ textarea {
 
     100% {
         width: 0;
-        content: "hello"
+
     }
 
 }
